@@ -1,4 +1,4 @@
-# Deploy with Helm[pp[]]
+# Deploy with Helm
 
 As we progress with understanding deployment in a cloud native environment. Deployment with Helm is another Key part. Helm is the package manager for Kubernetes, like:
 - apt for Ubuntu
@@ -30,7 +30,7 @@ helm version
 ```
 
 ### 2. Create Helm Chart for app
-- Prep  the chat, rm the content in templetes folder or modify the manifest file to suit your app deployment. Create deployment, service,secret, ingress etc.
+- Prep  the chat, you may want to rm the content in templetes folder or modify the manifest file to suit your app deployment. Create deployment, service,secret, ingress etc.
 
 ```
 helm create student-tracker 
@@ -58,7 +58,7 @@ helm install ingress-nginx ingress-nginx/ingress-nginx \
 
 ### 5. Install your helm chart
 
-```
+```sh
 helm install student-tracker ./student-tracker -n my-app -f my-values.yaml
 ```
 ![alt text](image.png)
@@ -76,6 +76,10 @@ student-tracker/
 ├── my-values.yaml      👈 OVERRIDES
 
 ```
+Success Deployment and Working! - BRAVO ! <br/>
+
+Having issues? Let's meet in the Chatroom
+
 
 ### usefull command
 
